@@ -99,7 +99,7 @@
     font-weight: 700;
     background: $yellow;
     &:hover{
-        border: 1px solid $black;
+        border: 1px solid $white;
         color: $white;
         background: $black;
     }
@@ -183,6 +183,7 @@
     background-color: $black;
     margin-top: 50px;
     padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .sale__txt{
@@ -198,12 +199,243 @@
     border: 1px solid $white;
     color: $black;
     font-weight: 700;
-    margin-top: 20px;
+    display: block;
+    margin-top: 38px;
     margin-bottom: 20px;
     background: $white;
     &:hover{
         border: 1px solid $white;
         color: $white;
         background: $black;
+    }
+}
+
+.sale__numberProc{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.sale-style{
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sale__yellow{
+    background-color: $yellow;
+    color: $black;
+    border: 1px solid $yellow;
+}
+
+.sale__black{
+    background-color: $black;
+    border: 1px dashed $white;
+    color: $white;
+}
+
+.span__saleNum{
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.sale__numTxt{
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.photo{
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.photo__txt{
+    color: $black;
+    width: 80%;
+    font-weight: 700;
+    padding-bottom: 15px;
+    line-height: 57px;
+    font-size: 42px;
+}
+
+.geo{
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.geo__txt{
+    color: $black;
+    width: 80%;
+    font-weight: 700;
+    padding-bottom: 15px;
+    line-height: 57px;
+    font-size: 42px;
+}
+
+.geo__map{
+    display: flex;
+    z-index: 100;
+    height: 450px;
+    background-color: $white ;
+    border: 4px solid $grey;
+    @include m-desk{
+       height: 400px;
+    }
+    @include sm-desk{
+        height: 350px;
+    }
+    
+    @include tablet {
+        height: 350px;
+    }
+    @include mobile {
+        height: 350px;
+    }
+}
+
+
+.geo__formCont{
+    background-color: $white;
+    box-shadow: 0 .46875rem 2.1875rem rgba(90, 97, 105, .1), 0 .9375rem 1.40625rem rgba(90, 97, 105, .1), 0 .25rem .53125rem rgba(90, 97, 105, .12), 0 .125rem .1875rem rgba(90, 97, 105, .1);            
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 100;
+    width: 25%; 
+    left: 65%;
+}
+
+.geo__container{
+    width: 100%;
+    border-top: 2px dashed $black;
+    margin-top: 25px;
+}
+
+.geo__inputs{
+    
+    padding:  0 30px;
+}
+
+.geo__call{
+    color: $black;
+    font-weight: bold;
+    padding:  0 30px;
+    font-size: 25px;
+    text-align: start;
+    
+    @include m-desk{
+        font-size: 25px;
+    }
+    @include sm-desk{
+        font-size: 23px;
+    }
+    @include tablet{
+        font-size: 23px;
+    }@include mobile{
+        font-size: 23px;
+    }
+}
+
+.geo__name{
+    outline: none;
+    width: 100%;
+    height: 60px;
+    border: none;
+    background-color: inherit;
+    font-weight: normal;
+    font-size: 15px;
+    border-bottom: 1px solid $grey;
+    &::placeholder{
+        color: $grey;
+    }
+    @include m-desk{
+        font-size: 15px;
+        height: 50px;
+        width: 95%;
+    }
+    @include sm-desk{
+        font-size: 11px;
+        height: 40px;
+        width: 95%;
+    }
+    @include tablet{
+        font-size: 17px;
+        height: 56px;
+        margin-bottom: 5px;
+        width: 100%;
+    }
+    @include mobile{
+        font-size: 14px;
+        height: 54px;
+        margin-bottom: 5px;
+        /* margin: 5px 0; */
+        width: 100%;
+    }
+}
+
+.geo__button{
+    margin-top: 25px;
+    border: 1px solid $yellow;
+    color: $black;
+    font-weight: 700;
+    width: 100%;
+    background: $yellow;
+    &:hover{
+        border: 1px solid $black;
+        color: $black;
+        background: $white;
+    }
+}
+
+
+
+.geo__description{
+    padding:  0 30px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    color: $lightgrey;
+    font-size: 15px;
+    line-height: 22px;
+    
+    @include m-desk{
+        font-size: 12px;
+        line-height: 18px;
+
+    }
+    @include sm-desk{
+        font-size: 10px;
+        line-height: 15px;
+    }
+    @include tablet{
+        font-size: 12px;
+        line-height: 18px;
+        width: 87%;
+        text-align: center;
+    }
+    
+    @include mobile{
+        font-size: 10px;
+        line-height: 15px;
+        width: 100%;
+        padding-top: 0px;
+        padding-bottom: 10px;
+    }
+}
+
+
+
+.geo__a{
+    color: $blue;
+    text-decoration: underline;
+    transition: .5s ease-out;
+    &:hover{
+        color: $lightgrey;
     }
 }
