@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './components/main/main.component';
 import { HeaderComponent } from './components/header/header.component';
+import { CategoriesComponent } from './components/categories/categories.component';
+import { CardCategoryComponent } from './components/card-category/card-category.component';
 
 
 @NgModule({
@@ -12,6 +14,8 @@ import { HeaderComponent } from './components/header/header.component';
     AppComponent,
     MainComponent,
     HeaderComponent,
+    CategoriesComponent,
+    CardCategoryComponent,
   ],
   imports: [
     BrowserModule,

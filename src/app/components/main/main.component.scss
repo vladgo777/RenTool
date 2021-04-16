@@ -132,6 +132,115 @@
     }
 }
 
+.how{
+    background-color: $black;
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.how__txt{
+    color: $white;
+    width: 80%;
+    font-weight: 700;
+    padding-bottom: 15px;
+    line-height: 57px;
+    font-size: 42px;
+    @include m-desk{
+        line-height: 55px;
+        font-size: 33px;
+    }
+    @include sm-desk{
+        line-height: 35px;
+        font-size: 25px;
+    }
+    @include tablet {
+        font-size: 35px;
+        line-height: 52px;
+    }
+    @include mobile{
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+.how__container{
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+.how__leftside{
+    width: 50%;
+}
+
+.how__rightside{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.how__row{
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.border-style{
+    border-top: 2px dashed $white;
+    border-bottom: 2px dashed $white;
+    border-right: 2px dashed $white;
+}
+
+.how__cont{
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.how__yellow{
+    color: $yellow;
+}
+
+.how__num{
+    width: 65px;
+}
+
+.how__num2{
+    width: 80px;
+    
+}
+
+.how__blockTxt{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center; 
+    padding: 58px 58px 58px 25px;
+
+}
+
+.how__txt2{
+    color: $white;
+    font-size: 20px;
+}
+
+.how__button{
+    border: 1px solid $white;
+    color: $black;
+    font-weight: 700;
+    display: block;
+    background: $white;
+    &:hover{
+        border: 1px solid $white;
+        color: $white;
+        background: $black;
+    }
+}
+
 .terms{
     padding-top: 50px;
 }
@@ -177,11 +286,12 @@
 .terms__zoneImg{
     margin-top: auto;
     margin-bottom: auto;
+    margin-left: 20px;
 }
 
 .sale{
     background-color: $black;
-    margin-top: 50px;
+    margin-top: 100px;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -282,7 +392,7 @@
 .geo__map{
     display: flex;
     z-index: 100;
-    height: 450px;
+    height: 520px;
     background-color: $white ;
     border: 4px solid $grey;
     @include m-desk{
@@ -315,7 +425,14 @@
 .geo__container{
     width: 100%;
     border-top: 2px dashed $black;
-    margin-top: 25px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.geo__num10{
+    margin-top: 20px;
+    width: 85%;
 }
 
 .geo__inputs{
