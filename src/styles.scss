@@ -30,7 +30,7 @@ a{
     text-decoration: none;
     transition: .2s ease-out;
     &:hover{
-        color: $grey;
+        color: $grey !important;
     }
 }
 

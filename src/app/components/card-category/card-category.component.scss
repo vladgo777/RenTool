@@ -1,0 +1,32 @@
+@import '~src/app/services/styles/mixin';
+@import '~src/app/services/styles/colors';
+
+.card{
+    width: 250px;
+    height: 200px;
+    background-image: url("../../../assets/img/444.png");
+    display: flex;
+    align-items: flex-end;
+    margin: 10px;
+    &:hover{
+        .card__opacity{
+            height: calc(100% - 20px);
+        }
+    }
+}
+
+
+.card__opacity{
+    width: 100%;
+    background: rgba(29, 29, 29, 0.6);
+    height: 66px;
+    padding: 10px;
+    transition: .2s ease-out;
+   
+}
+
+.card__name{
+    font-weight: bold;
+    color: $white;
+    font-size: 20px;
+}

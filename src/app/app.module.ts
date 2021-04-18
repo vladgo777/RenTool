@@ -7,6 +7,8 @@ import { MainComponent } from './components/main/main.component';
 import { HeaderComponent } from './components/header/header.component';
 import { CategoriesComponent } from './components/categories/categories.component';
 import { CardCategoryComponent } from './components/card-category/card-category.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { FooterCategoryComponent } from './components/footer-category/footer-category.component';
 
 
 @NgModule({
@@ -16,6 +18,8 @@ import { CardCategoryComponent } from './components/card-category/card-category.
     HeaderComponent,
     CategoriesComponent,
     CardCategoryComponent,
+    FooterComponent,
+    FooterCategoryComponent,
   ],
   imports: [
     BrowserModule,

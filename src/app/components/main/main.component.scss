@@ -358,10 +358,39 @@
     font-size: 30px;
 }
 
+.sale__img{
+    bottom: -116%;
+    left: 69%;
+    z-index: 4;
+    width: 477px;
+    position: absolute;
+    @include m-desk{
+        bottom: 114%;
+        width: 600px;
+    }
+    @include sm-desk{
+        bottom: 114%;
+        width: 450px;
+    }
+    @include tablet{
+        bottom: 107%;
+        left: 35%;
+        width: 566px;
+    }
+    @include mobile{
+        bottom: 102%;
+        left: -2%;
+        z-index: -10;
+        width: 309px;
+        position: absolute;
+    }
+}
+
 .photo{
     margin-top: 50px;
     padding-top: 50px;
     padding-bottom: 50px;
+    z-index: 50;
 }
 
 .photo__txt{
