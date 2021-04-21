@@ -9,7 +9,7 @@
     height: 750px;
     @include m-desk{
         background-size: cover;
-        height: 900px;
+        height: 650px;
     }
     @include sm-desk{ 
         background-size: 100% 95%;
@@ -34,7 +34,7 @@
     flex-direction: row;
     top: 20%;
     @include sm-desk{
-        top: 25;
+        top: 25%;
     }
     @include tablet{
         top: 20%;
@@ -112,14 +112,14 @@
     z-index: 50;
     width: 835px;
     @include m-desk{
-        top: 40%;
-        width: 1100px;
+        top: 10%;
+        width: 715px;
     }
     
     @include sm-desk{
-        top: 15%;
-        left: 25%;
-        width: 850px;
+        top: 7%;
+        left: 33%;
+        width: 731px;
     }
     @include tablet {
         width: 846px;
@@ -137,6 +137,16 @@
     margin-top: 50px;
     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+.how__img{
+    @include m-desk{
+        width: 650px;
+    }
+    @include sm-desk{
+        margin-left: 70px;
+        width: 650px;
+    }
 }
 
 .how__txt{
@@ -220,7 +230,12 @@
     justify-content: center;
     align-items: center; 
     padding: 58px 58px 58px 25px;
-
+    @include m-desk{
+        padding: 52px 52px 52px 25px;
+    }
+    @include sm-desk{
+        padding: 40px 30px 40px 15px;
+    }
 }
 
 .how__txt2{
@@ -281,12 +296,23 @@
     flex-direction: row;
     justify-content: space-between;
     margin-top: 40px;
+    @include sm-desk{
+        flex-direction: column;
+    }
 }
 
 .terms__zoneImg{
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 20px;
+    @include m-desk{
+        width: 700px;
+    }
+    @include sm-desk{
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .sale{
@@ -313,6 +339,10 @@
     margin-top: 38px;
     margin-bottom: 20px;
     background: $white;
+    @include sm-desk{
+        width: 100% !important;
+        padding: 20px 0 ;
+    }
     &:hover{
         border: 1px solid $white;
         color: $white;
@@ -326,6 +356,9 @@
     margin-bottom: 20px;
     display: flex;
     flex-direction: row;
+    @include sm-desk{
+        flex-direction: column;
+    }
 }
 
 .sale-style{
@@ -334,6 +367,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include sm-desk{
+        width: 100%;
+        padding: 20px 0 ;
+    }
 }
 
 .sale__yellow{
@@ -449,6 +486,10 @@
     z-index: 100;
     width: 25%; 
     left: 65%;
+    @include sm-desk{
+        width: 35%;
+        left: 52%;
+    }
 }
 
 .geo__container{
@@ -509,7 +550,7 @@
     @include sm-desk{
         font-size: 11px;
         height: 40px;
-        width: 95%;
+        width: 100%;
     }
     @include tablet{
         font-size: 17px;
@@ -553,7 +594,8 @@
     @include m-desk{
         font-size: 12px;
         line-height: 18px;
-
+        padding-top: 18px;
+        padding-bottom: 28px;
     }
     @include sm-desk{
         font-size: 10px;

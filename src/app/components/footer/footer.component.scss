@@ -34,8 +34,14 @@
 .footer__num{
     text-decoration: underline;
     color: $yellow;
-    font-size: 25px;
     margin-bottom: 10px;
+    font-size: 25px;
+    @include m-desk{
+        font-size: 21px;
+    }
+    @include sm-desk{
+        font-size: 18px;
+    }
 }
 
 .footer__email{

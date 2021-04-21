@@ -3,7 +3,13 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+    // apiUrl: 'http://pileof.tech:56/',
+     apiUrl: 'http://rentool.trex-studio.ru',
+    token_auth_config: {
+        // apiBase: 'http://pileof.tech:56/api'
+        apiBase: 'http://rentool.trex-studio.ru'
+    }
 };
 
 /*

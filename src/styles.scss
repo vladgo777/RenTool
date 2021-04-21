@@ -35,6 +35,11 @@ a{
 }
 
 
+
+.body{
+    overflow-x: hidden !important;
+}
+
 button{
     cursor: pointer;
     outline: none;
@@ -50,7 +55,7 @@ button{
 		max-width: 1300px;
     }
 	@include m-desk{
-		max-width: 1100px;
+		max-width: 1200px;
     }
     @include sm-desk{
         max-width: 1000px;

@@ -1,3 +1,4 @@
+<div class="body">
 <header></header>
 
 <div class="big-banner">
@@ -20,7 +21,7 @@
     </div>
 </div>
 
-<categories></categories>
+<categories  *ngFor = "let film of categoryCardMas" ></categories>
 
 <div class="how">
     <div class="how__content content1">
@@ -167,10 +168,11 @@
                 Наше местоположение
             </h2>
             <div class="geo__map">
-                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Abbfd7d4715a7a849a869e53dec3baf9d51508c25193663d2891603949be54aea&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>   
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8463cf8539b08b4cee314834c8e091e4ce5e36cde7a00add5543734ed9cff133&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>   
             </div>
         </div>
     </div>
 </div>
 
 <footer></footer>
+</div>

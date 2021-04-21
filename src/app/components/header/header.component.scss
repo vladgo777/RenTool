@@ -59,6 +59,12 @@
     font-size: 20px;
     color: $black;
     line-height: 23px;
+    @include m-desk{
+        display: none;
+    }
+    @include sm-desk{
+        display: none;
+    }
 }
 
 .header__num{
