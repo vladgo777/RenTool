@@ -4,7 +4,7 @@
             Категории оборудования
         </h2>
         <div class="categories__container">
-            <card-category *ngFor = "let category of categoryCardMas" ></card-category>
+            <card-category *ngFor = "let cat of category" [data] = "cat"></card-category>
         </div>
         <a href="" class="categories__button button-style">
             Связаться с менеджером

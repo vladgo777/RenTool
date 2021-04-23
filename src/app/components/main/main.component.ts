@@ -5,6 +5,10 @@ import { Input} from '@angular/core';
 
 import { ApiService } from '../../services/api/api.service';
 import {Category} from '../../services/Category';
+
+
+import * as $ from 'jquery';
+import 'magnific-popup';
 @Component({
   selector: 'main',
   templateUrl: './main.component.html',
@@ -43,6 +47,12 @@ category: Category[]=[];
   	// 	  	console.log(data)
     //   }
     // );
+
+    $('.popup-gallery').magnificPopup({
+      delegate: 'a',
+      type: 'image',
+     
+    });
   }
 
 }

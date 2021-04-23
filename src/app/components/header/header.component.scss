@@ -22,7 +22,8 @@
     }
     
 	@include mobile{
-        display: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     &.background{ 
         padding-top: 10px;
@@ -39,13 +40,24 @@
 
 .header__logo{
     width: 30%;
+    @include mobile{
+        width: 75.35px;
+    }
 }
 
+.header__img{
+    @include mobile{
+        width: 100px;
+    }
+}
 .header__part{
     width: 33%;
     display: flex;
     align-items: center;
     justify-content: center;
+    @include mobile{
+        width: 20%;
+    }
 }
 
 .header__content{
@@ -65,6 +77,9 @@
     @include sm-desk{
         display: none;
     }
+    @include mobile{
+        display: none;
+    }
 }
 
 .header__num{
@@ -72,6 +87,9 @@
     background: transparent;
     border: 1px solid $black;
     margin-left: 20px;
+    @include mobile{
+        display: none;
+    }
     &:hover{
         color: $white;
         background: $black;
@@ -89,8 +107,14 @@
     color: $black;
     font-size: 20px;
     text-decoration: underline;
+    @include mobile{
+        display: none;
+    }
 }
 
 .header__bucket{
     margin-left: 20px;
+    @include mobile{
+        width: 30px;
+    }
 }

@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --proxy-config proxy.conf.json",
+    "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -19,7 +19,10 @@
     "@angular/platform-browser": "~8.2.14",
     "@angular/platform-browser-dynamic": "~8.2.14",
     "@angular/router": "~8.2.14",
+    "jquery": "^3.6.0",
+    "magnific-popup": "^1.1.0",
     "rxjs": "^6.4.0",
+    "rxjs-compat": "^6.6.7",
     "tslib": "^1.10.0",
     "ymaps": "^0.2.1",
     "zone.js": "~0.9.1"

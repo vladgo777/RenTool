@@ -5,8 +5,6 @@ export class Category {
     childrenCategories: number;
     goods: any=[];
     photo: any=[];
-  
-    // Category(photo:any=[]) {
-    //       this.photo = photo;
-    //   }
+    idPhoto: number;
+    url: string;
   }

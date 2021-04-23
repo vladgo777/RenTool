@@ -22,8 +22,8 @@
     }
     
     @include mobile{
-        // background-image: url('assets/img/head2.png') ; 
-        height: 600px;
+        background-image: url('../../../assets/img/background2.png') ; 
+        height: 720px;
         background-size: 150% 100%;
     }
 
@@ -81,6 +81,10 @@
     list-style: none;
     margin-top: 35px;
     margin-bottom: 35px;
+    
+    @include mobile{
+        font-size: 16px;
+    }
     li{
         padding-left: 25px;
         position: relative;
@@ -126,9 +130,9 @@
         top: 80%;
     }
     @include mobile{
-        width: 453px;
-        top: 97%;
-        left: -10%;
+        width: 348px;
+        top: 103%;
+        left: -3%;
     }
 }
 
@@ -170,6 +174,7 @@
     }
     @include mobile{
         font-size: 20px;
+        width: 100%;
         line-height: 30px;
     }
 }
@@ -179,9 +184,17 @@
     flex-direction: row;
     padding-top: 40px;
     padding-bottom: 60px;
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0px;
+    }
 }
 .how__leftside{
     width: 50%;
+    @include mobile{
+        width: 100%;
+    }
 }
 
 .how__rightside{
@@ -189,12 +202,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include mobile{
+        width: 100%;
+    }
 }
 
 .how__row{
     display: flex;
     flex-direction: row;
    
+}
+
+.how__img{
+    @include mobile{
+        display: none;
+    }
 }
 
 .border-style{
@@ -236,11 +258,18 @@
     @include sm-desk{
         padding: 40px 30px 40px 15px;
     }
+    @include mobile{
+        width: 72%;
+        padding: 25px 25px;
+    }
 }
 
 .how__txt2{
     color: $white;
-    font-size: 20px;
+    font-size: 20px; 
+    @include mobile{
+        font-size: 17px;
+    }
 }
 
 .how__button{
@@ -249,6 +278,9 @@
     font-weight: 700;
     display: block;
     background: $white;
+    @include mobile{
+        margin-top: 50px;
+    }
     &:hover{
         border: 1px solid $white;
         color: $white;
@@ -280,6 +312,7 @@
         line-height: 52px;
     }
     @include mobile{
+        width: 100%;
         font-size: 20px;
         line-height: 30px;
     }
@@ -289,6 +322,10 @@
     font-size: 20px;
     line-height: 37px;
     color: $black;
+    
+    @include mobile{
+        font-size: 17px;
+    }
 }
 
 .terms__container{
@@ -297,6 +334,9 @@
     justify-content: space-between;
     margin-top: 40px;
     @include sm-desk{
+        flex-direction: column;
+    }
+    @include mobile{
         flex-direction: column;
     }
 }
@@ -313,6 +353,12 @@
         margin-left: auto;
         margin-right: auto;
     }
+    @include mobile{
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 290px;
+    }
 }
 
 .sale{
@@ -320,6 +366,9 @@
     margin-top: 100px;
     padding-top: 50px;
     padding-bottom: 50px;
+    @include mobile{
+        margin-top: 50px;
+    }
 }
 
 .sale__txt{
@@ -329,6 +378,11 @@
     padding-bottom: 15px;
     line-height: 57px;
     font-size: 42px;
+    
+    @include mobile{
+        font-size: 20px;
+        line-height: 30px;
+    }
 }
 
 .sale__button{
@@ -359,6 +413,11 @@
     @include sm-desk{
         flex-direction: column;
     }
+    
+    @include mobile{
+        flex-direction: column;
+        width: 95%;
+    }
 }
 
 .sale-style{
@@ -370,6 +429,10 @@
     @include sm-desk{
         width: 100%;
         padding: 20px 0 ;
+    }
+    @include mobile{
+        width: 97%;
+        padding: 10px;
     }
 }
 
@@ -388,11 +451,17 @@
 .span__saleNum{
     font-size: 70px;
     font-weight: bold;
+    @include mobile{
+        font-size: 48px;
+    }
 }
 
 .sale__numTxt{
     margin-left: 20px;
     font-size: 30px;
+    @include mobile{
+        font-size: 14px;
+    }
 }
 
 .sale__img{
@@ -428,6 +497,10 @@
     padding-top: 50px;
     padding-bottom: 50px;
     z-index: 50;
+    @include mobile{
+        margin-top: 0px;
+        padding-top: 50px;
+    }
 }
 
 .photo__txt{
@@ -437,15 +510,29 @@
     padding-bottom: 15px;
     line-height: 57px;
     font-size: 42px;
+    
+    @include mobile{
+        font-size: 20px;
+        line-height: 30px;
+    }
 }
 
 .geo{
     margin-top: 50px;
     padding-top: 50px;
     padding-bottom: 50px;
+    @include mobile{
+        margin-top: 0px;
+        padding-top: 50px;
+    }
 }
 
-
+.geo__content{
+    @include mobile{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
 .geo__txt{
     color: $black;
     width: 80%;
@@ -453,6 +540,10 @@
     padding-bottom: 15px;
     line-height: 57px;
     font-size: 42px;
+    @include mobile{
+        font-size: 20px;
+        line-height: 30px;
+    }
 }
 
 .geo__map{
@@ -490,6 +581,12 @@
         width: 35%;
         left: 52%;
     }
+    
+    @include mobile {
+        position: static;
+        width: 100%;
+        margin-top: 25px;
+    }
 }
 
 .geo__container{
@@ -508,6 +605,9 @@
 .geo__inputs{
     
     padding:  0 30px;
+    @include mobile{
+        padding: 0 20px;
+    }
 }
 
 .geo__call{
@@ -611,8 +711,10 @@
     @include mobile{
         font-size: 10px;
         line-height: 15px;
-        width: 100%;
-        padding-top: 0px;
+        width: 95%;
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
         padding-bottom: 10px;
     }
 }

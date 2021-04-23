@@ -1,8 +1,8 @@
 // import {Observable} from 'rxjs/Observable';
 import { HttpClient, HttpHeaders  } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { map } from 'rxjs/operators';
-
+import {Observable} from 'rxjs/Rx';
+import 'rxjs/add/operator/map'
 
 
 import { environment } from '../../../environments/environment';
@@ -22,4 +22,25 @@ export class ApiService {
 
       return this.http.get(endpoint);
    }
+
+   public getAllCategories(): Observable<Post[]> {
+      return this.http.get('http://rentool.trex-studio.ru/categories')
+        .map( (data) => {
+           let postList = [].slice.call(data);
+           return postList.map(function(post: any){
+             return {
+               id: post.id,
+               name: post.name,
+               rootCategory: post.rootCategory,
+               childrenCategories: post.childrenCategories,
+               goods: post.goods,
+               photo: post.photo,
+               idPhoto: post.photo.id,
+               url: post.photo.url
+         }
+       })
+     });
+}
+
+
 }

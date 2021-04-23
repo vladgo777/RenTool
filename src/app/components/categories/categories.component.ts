@@ -10,7 +10,7 @@ import {Category} from '../../services/Category';
 })
 export class CategoriesComponent implements OnInit {
 
-  categoryCardMas: any=[]
+  // categoryCardMas: any=[]
   category: Category[]=[]; 
   constructor(
     public httpService: ApiService
@@ -18,12 +18,19 @@ export class CategoriesComponent implements OnInit {
 
 
   ngOnInit() {
-    this.httpService.get().subscribe(
+    this.httpService.getAllCategories().subscribe(
       data => {
-        data => this.categoryCardMas = data;
-  		  	console.log(data)
+        // this.category = data;  
+        if (data['name'] == null ){
+          this.category = data; 
+        }
+              
       }
     );
+
+    
+
+
   }
 
 }
