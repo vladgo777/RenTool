@@ -15,9 +15,11 @@ export class ApiService {
    
    constructor(private http: HttpClient) {}
 
-   public get(path) {
-      // console.log(path)
-      var endpoint = this.API_URL + path;
-    return this.http.get(endpoint);
+   public get() {
+     // var endpoint = this.API_URL + path;
+     var endpoint = "http://rentool.trex-studio.ru/categories";
+     console.log('1');
+
+      return this.http.get(endpoint);
    }
 }
