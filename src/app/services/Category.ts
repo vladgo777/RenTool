@@ -1,6 +1,6 @@
 export class Category {
     name: string;
-    rootCategory: number;
+    rootCategory: any=[];
     id: number;
     childrenCategories: number;
     goods: any=[];

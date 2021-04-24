@@ -1,0 +1,16 @@
+@import '~src/app/services/styles/mixin';
+@import '~src/app/services/styles/colors';
+
+.navbar-link{
+    color: $white;
+    font-size: 17px;
+    padding: 10px 0;
+    list-style-type: none; 
+    &:before {
+        content: "- ";
+    }   
+    a{
+        text-decoration: none;
+        color: $white;
+    }     
+}
