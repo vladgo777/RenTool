@@ -14,7 +14,7 @@
                 </a>
             </div>
 
-            <footer-category></footer-category>
+            <footer-category *ngFor = "let cat of category" [dataGet] = "cat"></footer-category>
         </div>
         <!-- <div class="footer__downside">
 

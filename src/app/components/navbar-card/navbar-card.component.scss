@@ -1,0 +1,37 @@
+@import '~src/app/services/styles/mixin';
+@import '~src/app/services/styles/colors';
+
+.navbar-card{
+    width: 100%;
+    border: none;
+    text-align: start;
+    outline: none;
+    background-color: inherit;
+    border-bottom: 1px solid $lightgrey;
+    padding: 15px;
+    transition: .5s ease-out; 
+    &:hover{
+        .navbar-card__txt{
+                color: $lightgrey;
+                border-left: 2px solid $yellow;
+                border-right: 2px solid $yellow;
+        }
+    }
+}
+
+.navbar-card__txt{
+    color: $black;
+    font-size: 15px; 
+    padding: 0 15px ;
+    transition: .5s ease-out;
+    border-left: 2px solid $white;
+    border-right: 2px solid $white;
+    font-weight: 500;
+    
+}
+
+.active{
+    color: $lightgrey;
+    border-left: 2px solid $yellow;
+    border-right: 2px solid $yellow;
+}

@@ -21,7 +21,7 @@
 .footer__callback{
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    // margin: 10px;
     align-items: flex-start;
     width: 20%;
     @include mobile{
@@ -132,6 +132,6 @@
 }
 
 footer-category{
-    width: 21%;
+    width: 20%;
 }
 

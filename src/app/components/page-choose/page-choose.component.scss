@@ -1,15 +1,30 @@
 @import '~src/app/services/styles/mixin';
 @import '~src/app/services/styles/colors';
 
-.categories{
+.page-choose{
+    
     margin-top: 50px;
+    height: 750px;
 }
+
+.page-choose__content{
+    display: flex;
+    flex-direction: column;
+    top: 20%;
+    @include sm-desk{
+        top: 25%;
+    }
+    @include tablet{
+        top: 20%;
+    }
+}
+
 
 card-category{
     width: 20%;
 }
 
-.categories__txt{
+.page-choose__txt{
     color: $black;
     width: 80%;
     font-weight: 700;
@@ -40,19 +55,4 @@ card-category{
     flex-wrap: wrap;
     align-items: center;
     margin-top: 50px;
-}
-
-
-.categories__button{
-    margin-top: 50px;
-    border: 1px solid $black;
-    color: $black;
-    font-weight: 700;
-    display: block;
-    background: $white;
-    &:hover{
-        border: 1px solid $white;
-        color: $white;
-        background: $black;
-    }
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ElementRef, ViewChild } from '@angular/core';
 
 import { HttpClient, HttpHeaders  } from '@angular/common/http';
 import { Input} from '@angular/core';
@@ -26,33 +26,12 @@ category: Category[]=[];
     public httpService: ApiService
   ) { }
 
-  ngOnInit() {
-    // this.httpService.get('/categories').subscribe(
-    //   data => console.log(data));
-    // this.httpService.get().subscribe(
-    //   data => {
-    //     data => this.categoryCardMas = data.result;
-    //     console.log(data)
-    //   },
-    //    err => {
-    //     console.log(err.message);
-    //   }, () => {
-    //     console.log('completed');
-    //   }
-    // );
-
-    // this.httpService.get().subscribe(
-    //   data => {
-    //     data => this.categoryCardMas = data.result;
-  	// 	  	console.log(data)
-    //   }
-    // );
-
-    $('.popup-gallery').magnificPopup({
-      delegate: 'a',
-      type: 'image',
-     
-    });
-  }
+  ngOnInit(){}
+  // ngAfterViewInit():void {
+  //     $('.image-popup-vertical-fit').magnificPopup({
+  //       type: 'image'      
+      
+  //     });
+  // }
 
 }

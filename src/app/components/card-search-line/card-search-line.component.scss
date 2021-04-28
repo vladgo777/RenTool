@@ -1,0 +1,15 @@
+@import '~src/app/services/styles/mixin';
+@import '~src/app/services/styles/colors';
+
+.card__linkCont{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    align-items: flex-start;
+}
+
+.card__nameCat{
+    font-weight: bold;
+    font-size: 17px;
+    color: $black;
+}

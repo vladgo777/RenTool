@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component,Input,  OnInit } from '@angular/core';
 
 @Component({
   selector: 'children-category-link',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./children-category-link.component.scss']
 })
 export class ChildrenCategoryLinkComponent implements OnInit {
-
+@Input() dataGet: any;
   constructor() { }
 
   ngOnInit() {

@@ -12,6 +12,12 @@ import { CardCategoryComponent } from './components/card-category/card-category.
 import { FooterComponent } from './components/footer/footer.component';
 import { FooterCategoryComponent } from './components/footer-category/footer-category.component';
 import { ChildrenCategoryLinkComponent } from './components/children-category-link/children-category-link.component';
+import { PageChooseComponent } from './components/page-choose/page-choose.component';
+import { SearchLineComponent } from './components/search-line/search-line.component';
+import { NavbarCardComponent } from './components/navbar-card/navbar-card.component';
+import { SearchLine2Component } from './components/search-line2/search-line2.component';
+import { CardSearchLineComponent } from './components/card-search-line/card-search-line.component';
+import { ChildrenLinkSearchComponent } from './components/children-link-search/children-link-search.component';
 
 
 @NgModule({
@@ -24,6 +30,12 @@ import { ChildrenCategoryLinkComponent } from './components/children-category-li
     FooterComponent,
     FooterCategoryComponent,
     ChildrenCategoryLinkComponent,
+    PageChooseComponent,
+    SearchLineComponent,
+    NavbarCardComponent,
+    SearchLine2Component,
+    CardSearchLineComponent,
+    ChildrenLinkSearchComponent,
   ],
   imports: [
     BrowserModule,

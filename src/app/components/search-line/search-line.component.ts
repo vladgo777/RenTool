@@ -1,22 +1,22 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit,Input } from '@angular/core';
 
 import { ApiService } from '../../services/api/api.service';
 import {Category} from '../../services/Category';
 @Component({
-  selector: 'categories',
-  templateUrl: './categories.component.html',
-  providers: [ApiService],
-  styleUrls: ['./categories.component.scss']
+  selector: 'search-line',
+  templateUrl: './search-line.component.html',
+  styleUrls: ['./search-line.component.scss']
 })
-export class CategoriesComponent implements OnInit {
+export class SearchLineComponent implements OnInit {
 
-  // categoryCardMas: any=[]
-  category: Category[]=[]; 
+  @Input() dataGet: any ;
+  
+  category: Category[]=[];
   categoryCheck: Category[]=[]; 
   constructor(
-    public httpService: ApiService,
-  ){}
+    public httpService: ApiService
+  ){};
+
   ngOnInit() {
     this.httpService.getCategories().subscribe(
       data => {
@@ -42,5 +42,4 @@ export class CategoriesComponent implements OnInit {
 
 
   }
-
 }

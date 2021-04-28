@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'card-category',
@@ -7,7 +8,14 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CardCategoryComponent implements OnInit {
   @Input() data: any;
-  constructor() { }
+  constructor(  
+     private router: Router
+    ) { }
+
+  showInfo(data: any){
+    // this.onChanged.emit(data);
+    this.router.navigate(['catalog', data]);
+  }
 
   ngOnInit() {
   }

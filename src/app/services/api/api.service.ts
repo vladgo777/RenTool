@@ -3,6 +3,7 @@ import { HttpClient, HttpHeaders  } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import {Observable} from 'rxjs/Rx';
 import 'rxjs/add/operator/map'
+import 'rxjs/Rx'
 
 
 import { environment } from '../../../environments/environment';
@@ -38,7 +39,7 @@ export class ApiService {
   //      })
   //    });
   // }
-  
+
 
 
   public getCategories(): Observable<Post[]> {

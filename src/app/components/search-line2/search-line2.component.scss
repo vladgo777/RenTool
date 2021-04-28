@@ -1,0 +1,29 @@
+@import '~src/app/services/styles/mixin';
+@import '~src/app/services/styles/colors';
+
+
+.search-line2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.search-line2__txt{
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 23px;
+    text-decoration-line: underline;
+}
+
+card-search-line{
+    width: 20%;
+}
+
+.search_line2__block{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}

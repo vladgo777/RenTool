@@ -1,0 +1,21 @@
+<div class="search-line">
+    <div class="search-line__content content1" >
+        <button class="search-line__button">Каталог</button>  
+        <div class="search-line__inputBlock">
+            <input type="text" class = "search-line__input" placeholder="Поиск по каталогу товаров">
+            <button class="search-line__button1">
+                <img src="../../assets/img/find.png" alt="" class="search-line__imgButton">
+            </button>
+        </div>
+
+        <div class="search-line__menu disactive">
+            <div class="search-line__navbar">
+                <span class="search-line__txt">Каталог товаров</span>
+                <div class="search-line__buttons">
+                    <navbar-card *ngFor = "let cat of category" [dataGet] = "cat"></navbar-card>
+                </div>
+            </div>
+            <search-line2></search-line2>
+        </div>
+    </div>
+</div>

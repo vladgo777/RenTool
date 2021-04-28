@@ -1,6 +1,6 @@
 <div class="footer__linkCont">
-    <span class="footer__nameCat">Электроинструменты</span>
+    <span class="footer__nameCat">{{dataGet.name}}</span>
     <ul>
-        <children-category-link></children-category-link>
+        <children-category-link  *ngFor = "let cat of category" [dataGet] = "cat"></children-category-link>
     </ul>
 </div>
